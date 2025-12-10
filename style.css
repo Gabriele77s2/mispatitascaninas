@@ -440,6 +440,11 @@ section h2::after {
     margin: 2rem 0;
 }
 
+.services-bg .services-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 /* Appointment Section */
 .appointment-content {
     display: grid;
