@@ -299,6 +299,7 @@ nav a:hover::after {
     margin-bottom: 1rem;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .hero p {
@@ -361,10 +362,12 @@ section h2::after {
 
 /* About Section */
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .about-text h3 {
@@ -685,4 +688,37 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* New Utilities for moved inline styles */
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--color-bg);
+}
+
+.btn-secondary {
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.appointment-note {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin-top: 1rem;
+}
+
+.appointment-contact-note {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.whatsapp-link-btn {
+    margin-top: 0.5rem;
+    display: inline-block;
 }
