@@ -618,7 +618,7 @@ footer p {
 /* Responsive */
 @media (max-width: 768px) {
     .header-container {
-        padding: 1rem;
+        padding: 0.8rem 1.5rem;
     }
 
     .menu-toggle {
@@ -635,10 +635,12 @@ footer p {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         display: none;
         flex-direction: column;
+        border-top: 1px solid var(--color-border);
     }
 
     nav.active {
         display: flex;
+        animation: fadeIn 0.3s ease-out;
     }
 
     nav ul {
@@ -661,25 +663,94 @@ footer p {
         background-color: var(--color-bg);
     }
 
+    /* Mobile Typography & Spacing */
+    .hero {
+        padding: 3rem 1.5rem;
+    }
 
     .hero h2 {
         font-size: 2rem;
     }
 
-    .about-content {
-        grid-template-columns: 1fr;
+    .brand-info h1 {
+        font-size: 1.5rem;
     }
 
-    .appointment-content {
-        grid-template-columns: 1fr;
+    section {
+        padding: 3rem 0;
     }
 
     section h2 {
         font-size: 1.8rem;
+        margin-bottom: 2rem;
     }
 
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    /* Grids & Layouts */
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .services-grid,
+    .testimonials-grid,
     .contact-grid {
         grid-template-columns: 1fr;
+        /* Force single column on mobile */
+        gap: 1.5rem;
+    }
+
+    .appointment-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Buttons */
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .floating-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand-info p {
+        font-size: 0.9rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .header-container {
+        padding: 0.8rem 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
     }
 }
 
